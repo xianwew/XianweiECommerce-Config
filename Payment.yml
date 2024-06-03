@@ -1,0 +1,10 @@
+build:
+  version: "1.0"
+
+user:
+  message: "This is XianweiEComeerce's payment micro service"
+  contactDetails:
+    name: "Xianwei Wu - Developer"
+    email: "xianwew@gamil.com"
+  onCallSupport:
+    xxxxxxxxxx
