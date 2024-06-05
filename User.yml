@@ -3,7 +3,7 @@ build:
 
 keycloak.auth-server-url: "http://localhost:7080"
 keycloak.realm: "XianweiECommerce"
-keycloak.client-id: "xianwei-ecommerce-monolith-client"
+keycloak.client-id: "xianwei-ecommerce"
 keycloak.client-secret: "g5HFcWL6MHBFnrAe9FO0HhlMipOHzFNZ"
 keycloak.master-id: "admin_cli"
 keycloak.master-secret: ""
