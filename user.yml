@@ -2,7 +2,7 @@ build:
   version: "1.0"
 
 keycloak:
-  auth-server-url: "http://localhost:7080/auth"
+  auth-server-url: "http://localhost:7080"
   realm: "XianweiECommerce"
   client-id: "xianwei-ecommerce"
   client-secret: "g5HFcWL6MHBFnrAe9FO0HhlMipOHzFNZ"
