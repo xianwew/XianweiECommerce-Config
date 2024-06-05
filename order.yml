@@ -1,14 +1,15 @@
 build:
   version: "1.0"
 
-keycloak.auth-server-url: "http://localhost:7080"
-keycloak.realm: "XianweiECommerce"
-keycloak.client-id: "xianwei-ecommerce"
-keycloak.client-secret: "g5HFcWL6MHBFnrAe9FO0HhlMipOHzFNZ"
-keycloak.master-id: "admin_cli"
-keycloak.master-secret: ""
-keycloak.admin-username: "admin"
-keycloak.admin-password: "admin"
+keycloak:
+  auth-server-url: "http://localhost:7080/auth"
+  realm: "XianweiECommerce"
+  client-id: "xianwei-ecommerce"
+  client-secret: "g5HFcWL6MHBFnrAe9FO0HhlMipOHzFNZ"
+  master-id: "admin-cli"
+  master-secret: ""
+  admin-username: "admin"
+  admin-password: "admin"
 
 order:
   message: "This is XianweiECommerce's order micro service"
