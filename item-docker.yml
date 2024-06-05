@@ -1,0 +1,20 @@
+build:
+  version: "1.0"
+
+keycloak:
+  auth-server-url: "keycloak://localhost:7080"
+  realm: "XianweiECommerce"
+  client-id: "xianwei-ecommerce"
+  client-secret: "g5HFcWL6MHBFnrAe9FO0HhlMipOHzFNZ"
+  master-id: "admin-cli"
+  master-secret: ""
+  admin-username: "admin"
+  admin-password: "admin"
+
+item:
+  message: "This is XianweiECommerce's item  micro service"
+  contactDetails:
+    name: "Xianwei Wu - Developer"
+    email: "xianwew@gamil.com"
+  onCallSupport:
+    xxxxxxxxxx
