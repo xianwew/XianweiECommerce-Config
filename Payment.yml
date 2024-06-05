@@ -10,8 +10,8 @@ keycloak.master-secret: ""
 keycloak.admin-username: "admin"
 keycloak.admin-password: "admin"
 
-user:
-  message: "This is XianweiEComeerce's payment micro service"
+payment:
+  message: "This is XianweiECommerce's payment micro service"
   contactDetails:
     name: "Xianwei Wu - Developer"
     email: "xianwew@gamil.com"
