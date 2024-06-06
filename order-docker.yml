@@ -15,7 +15,7 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
 
 keycloak:
-  auth-server-url: "keycloak://localhost:7080"
+  auth-server-url: "http://keycloak:7080"
   realm: "XianweiECommerce"
   client-id: "xianwei-ecommerce"
   client-secret: "g5HFcWL6MHBFnrAe9FO0HhlMipOHzFNZ"
