@@ -9,7 +9,7 @@ spring:
       password: wxwwxw123
       driver-class-name: com.mysql.cj.jdbc.Driver
     slave:
-      url: jdbc:mysql://userservice-slave:3307/userservice
+      url: jdbc:mysql://userservice-slave:3306/userservice
       username: root
       password: wxwwxw123
       driver-class-name: com.mysql.cj.jdbc.Driver
