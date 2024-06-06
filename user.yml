@@ -1,6 +1,17 @@
 build:
   version: "1.0"
 
+spring:
+  datasource:
+    master:
+      jdbc-url: jdbc:mysql://localhost:3310/itemservice
+      username: root
+      password: wxwwxw123
+    slave:
+      jdbc-url: jdbc:mysql://localhost:3311/itemservice
+      username: root
+      password: wxwwxw123
+
 keycloak:
   auth-server-url: "http://localhost:7080"
   realm: "XianweiECommerce"
