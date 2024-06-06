@@ -4,12 +4,12 @@ build:
 spring:
   datasource:
     master:
-      jdbc-url: jdbc:mysql://localhost:3310/itemservice
+      jdbc-url: jdbc:mysql://localhost:3311/itemservice
       username: root
       password: wxwwxw123
       driver-class-name: com.mysql.cj.jdbc.Driver
     slave:
-      jdbc-url: jdbc:mysql://localhost:3311/itemservice
+      jdbc-url: jdbc:mysql://localhost:3312/itemservice
       username: root
       password: wxwwxw123
       driver-class-name: com.mysql.cj.jdbc.Driver
