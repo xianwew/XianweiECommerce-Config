@@ -4,11 +4,11 @@ build:
 spring:
   datasource:
     master:
-      jdbc-url: jdbc:mysql://localhost:3310/itemservice
+      jdbc-url: jdbc:mysql://localhost:3307/userservice
       username: root
       password: wxwwxw123
     slave:
-      jdbc-url: jdbc:mysql://localhost:3311/itemservice
+      jdbc-url: jdbc:mysql://localhost:3308/userservice
       username: root
       password: wxwwxw123
 
