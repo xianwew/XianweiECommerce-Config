@@ -1,6 +1,19 @@
 build:
   version: "1.0"
 
+spring:
+  datasource:
+    master:
+      url: jdbc:mysql://orderservice-master:3308/orderservice
+      username: root
+      password: wxwwxw123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    slave:
+      url: jdbc:mysql://orderservice-slave:3309/orderservice
+      username: root
+      password: wxwwx123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
 keycloak:
   auth-server-url: "keycloak://localhost:7080"
   realm: "XianweiECommerce"
