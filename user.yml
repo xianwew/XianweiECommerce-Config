@@ -7,10 +7,12 @@ spring:
       jdbc-url: jdbc:mysql://localhost:3307/userservice
       username: root
       password: wxwwxw123
+      driver-class-name: com.mysql.cj.jdbc.Driver
     slave:
       jdbc-url: jdbc:mysql://localhost:3308/userservice
       username: root
       password: wxwwxw123
+      driver-class-name: com.mysql.cj.jdbc.Driver
 
 keycloak:
   auth-server-url: "http://localhost:7080"
