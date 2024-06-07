@@ -14,6 +14,18 @@ spring:
       password: wxwwxw123
       driver-class-name: com.mysql.cj.jdbc.Driver
 
+userservice:
+  url: http://user:8070/api/user
+
+orderservice:
+  url: http://order:8050/api/orders
+
+feedbackservice:
+  url: http://feedback:8070/api/feedback
+
+ratingservice:
+  url: http://rating:8070/api/ratings
+
 keycloak:
   auth-server-url: "http://keycloak:8080"
   realm: "XianweiECommerce"
