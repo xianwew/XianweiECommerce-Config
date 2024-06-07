@@ -21,10 +21,10 @@ orderservice:
   url: http://order:8050/api/orders
 
 feedbackservice:
-  url: http://feedback:8070/api/feedback
+  url: http://user:8070/api/feedback
 
 ratingservice:
-  url: http://rating:8070/api/ratings
+  url: http://user:8070/api/ratings
 
 keycloak:
   auth-server-url: "http://keycloak:8080"
