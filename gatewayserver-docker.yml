@@ -9,3 +9,11 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: "http://eurekaserver:8761/eureka/"
+
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: "http://keycloak:8080/realms/XianweiECommerce/protocol/openid-connect/certs"
