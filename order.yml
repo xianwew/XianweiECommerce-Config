@@ -14,6 +14,21 @@ spring:
       password: wxwwx123
       driver-class-name: com.mysql.cj.jdbc.Driver
 
+itemservice:
+  url: http://localhost:8040/api/item
+
+userservice:
+  url: http://localhost:8070/api/user
+
+cardservice:
+  url: http://localhost:8070/api/cards
+
+orderservice:
+  url: http://localhost:8050/api/orders
+
+cartservice:
+  url: http://localhost:8070/api/cart
+
 keycloak:
   auth-server-url: "http://localhost:7080"
   realm: "XianweiECommerce"
