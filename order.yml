@@ -14,6 +14,10 @@ spring:
       password: wxwwx123
       driver-class-name: com.mysql.cj.jdbc.Driver
 
+payment:
+  service:
+    url: http://localhost:8060/api/payment
+
 itemservice:
   url: http://localhost:8040/api/item
 
