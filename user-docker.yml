@@ -13,8 +13,6 @@ spring:
       username: root
       password: wxwwxw123
       driver-class-name: com.mysql.cj.jdbc.Driver
-    hikari:
-      maximum-pool-size: 2
     
 keycloak:
   auth-server-url: "http://keycloak:8080"
