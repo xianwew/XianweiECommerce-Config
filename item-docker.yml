@@ -13,6 +13,13 @@ spring:
       username: root
       password: wxwwxw123
       driver-class-name: com.mysql.cj.jdbc.Driver
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: "http://keycloak:8080/realms/XianweiECommerce"
+          jwk-set-uri: "http://keycloak:8080/realms/XianweiECommerce/protocol/openid-connect/certs"
+
 
 userservice:
   url: http://user:8070/api/user
