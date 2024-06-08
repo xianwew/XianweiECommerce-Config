@@ -10,4 +10,11 @@ eureka:
     serviceUrl:
       defaultZone: "http://eurekaserver:8761/eureka/"
 
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: "http://keycloak:8080/realms/XianweiECommerce"
+          jwk-set-uri: "http://keycloak:8080/realms/XianweiECommerce/protocol/openid-connect/certs"
 
