@@ -11,6 +11,25 @@ keycloak:
   admin-username: "admin"
   admin-password: "admin"
 
+spring:
+  kafka:
+    bootstrap-servers: kafka1:9092,kafka2:9093,kafka3:9094
+    consumer:
+      group-id: payment-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      enable-auto-commit: false
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      retries: 3
+      acks: all
+    listener:
+      ack-mode: manual
+    topic:
+      payment-result: paymentResultTopic
+
 payment:
   message: "This is XianweiECommerce's payment micro service"
   contactDetails:
