@@ -30,7 +30,7 @@ spring:
     topic:
       payment-result: paymentResultTopic
   datasource:
-    url: jdbc:mysql://localhost:3313/paymentdb
+    url: jdbc:mysql://localhost:3313/paymentservice
     driverClassName: com.mysql.cj.jdbc.Driver
     username: root
     password: wxwwxw123
