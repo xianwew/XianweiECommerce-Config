@@ -19,7 +19,26 @@ spring:
         jwt:
           issuer-uri: "http://keycloak:8080/realms/XianweiECommerce"
           jwk-set-uri: "http://keycloak:8080/realms/XianweiECommerce/protocol/openid-connect/certs"
+  data:
+    redis:
+      sentinel:
+        master: redis-master
+        nodes: "redis-sentinel1:26379,redis-sentinel2:26380,redis-sentinel3:26381"
+      password: wxwwxw123
+      jedis:
+        pool:
+          max-active: 10
+          max-idle: 5
+          min-idle: 1
+          test-on-borrow: true
 
+search:
+  items:
+    cache:
+      refresh:
+        rate: 20000
+      initial:
+        delay: 10000
 
 userservice:
   url: http://user:8070/api/user
