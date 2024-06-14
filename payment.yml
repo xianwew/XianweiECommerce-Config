@@ -29,6 +29,16 @@ spring:
       ack-mode: manual
     topic:
       payment-result: paymentResultTopic
+  datasource:
+    url: jdbc:mysql://localhost:3313/paymentdb
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: your_mysql_username
+    password: your_mysql_password
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 eureka:
   client:
