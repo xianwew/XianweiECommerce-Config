@@ -29,6 +29,16 @@ spring:
       ack-mode: manual
     topic:
       payment-result: paymentResultTopic
+  datasource:
+    url: jdbc:mysql://paymentservice-failed-messages:3313/paymentservice
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: your_mysql_username
+    password: your_mysql_password
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 payment:
   message: "This is XianweiECommerce's payment micro service"
