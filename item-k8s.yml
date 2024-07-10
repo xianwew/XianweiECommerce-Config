@@ -1,0 +1,71 @@
+build:
+  version: "1.0"
+
+spring:
+  datasource:
+    master:
+      jdbc-url: jdbc:mysql://10.0.0.212:3311/itemservice
+      username: root
+      password: wxwwxw123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    slave:
+      jdbc-url: jdbc:mysql://10.0.0.212:3312/itemservice
+      username: root
+      password: wxwwxw123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: "http://keycloak-svc:7080/realms/XianweiECommerce"
+          jwk-set-uri: "http://keycloak-svc:7080/realms/XianweiECommerce/protocol/openid-connect/certs"
+  data:
+    redis:
+      sentinel:
+        master: redis-master
+        nodes: "10.0.0.212:26379,10.0.0.212:26380,10.0.0.212:26381"
+      password: wxwwxw123
+      jedis:
+        pool:
+          max-active: 10
+          max-idle: 5
+          min-idle: 1
+          test-on-borrow: true
+
+search:
+  items:
+    cache:
+      refresh:
+        rate: 20000
+      initial:
+        delay: 10000
+
+userservice:
+  url: http://user:8070/api/user
+
+orderservice:
+  url: http://order:8050/api/orders
+
+feedbackservice:
+  url: http://user:8070/api/feedback
+
+ratingservice:
+  url: http://user:8070/api/ratings
+
+keycloak:
+  auth-server-url: "http://keycloak-svc:7080"
+  realm: "XianweiECommerce"
+  client-id: "xianwei-ecommerce"
+  client-secret: "g5HFcWL6MHBFnrAe9FO0HhlMipOHzFNZ"
+  master-id: "admin-cli"
+  master-secret: ""
+  admin-username: "admin"
+  admin-password: "admin"
+
+item:
+  message: "This is XianweiECommerce's item  micro service"
+  contactDetails:
+    name: "Xianwei Wu - Developer"
+    email: "xianwew@gamil.com"
+  onCallSupport:
+    xxxxxxxxxx
