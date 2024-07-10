@@ -14,7 +14,7 @@ spring:
       password: wxwwx123
       driver-class-name: com.mysql.cj.jdbc.Driver
   kafka:
-    bootstrap-servers: kafka1:9092,kafka2:9093,kafka3:9094
+    bootstrap-servers: 10.0.0.212:9092,10.0.0.212:9093,10.0.0.212:9094
     consumer:
       group-id: order-group
       auto-offset-reset: earliest
