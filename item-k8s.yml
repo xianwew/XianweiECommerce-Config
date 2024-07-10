@@ -22,7 +22,7 @@ spring:
   data:
     redis:
       sentinel:
-        master: redis-master
+        master: 10.0.0.212
         nodes: "10.0.0.212:26379,10.0.0.212:26380,10.0.0.212:26381"
       password: wxwwxw123
       jedis:
