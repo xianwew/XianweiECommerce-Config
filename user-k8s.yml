@@ -18,7 +18,7 @@ itemservice:
   url: http://item:8040/api/item
     
 keycloak:
-  auth-server-url: "http://keycloak:8080"
+  auth-server-url: "http://keycloak-svc:7080"
   realm: "XianweiECommerce"
   client-id: "xianwei-ecommerce"
   client-secret: "g5HFcWL6MHBFnrAe9FO0HhlMipOHzFNZ"
