@@ -34,19 +34,19 @@ payment:
     url: http://payment-svc.default.svc.cluster.local:8060/api/payment
 
 itemservice:
-  url: http://item-svc.default.svc.cluster.local-svc:8040/api/item
+  url: http://item-svc.default.svc.cluster.local:8040/api/item
 
 userservice:
-  url: http://user-svc.default.svc.cluster.local-svc:8070/api/user
+  url: http://user-svc.default.svc.cluster.local:8070/api/user
 
 cardservice:
-  url: http://user-svc.default.svc.cluster.local-svc:8070/api/cards
+  url: http://user-svc.default.svc.cluster.local:8070/api/cards
 
 orderservice:
-  url: http://order-svc.default.svc.cluster.local-svc:8050/api/orders
+  url: http://order-svc.default.svc.cluster.local:8050/api/orders
 
 cartservice:
-  url: http://user-svc.default.svc.cluster.local-svc:8070/api/cart
+  url: http://user-svc.default.svc.cluster.local:8070/api/cart
 
 keycloak:
   auth-server-url: "http://keycloak-svc:7080"
