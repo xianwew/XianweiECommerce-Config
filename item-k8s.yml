@@ -21,11 +21,16 @@ spring:
           jwk-set-uri: "http://keycloak-svc:7080/realms/XianweiECommerce/protocol/openid-connect/certs"
   data:
     redis:
-      host: 10.0.0.212
       sentinel:
         master: redis-master
         nodes: "10.0.0.212:26379,10.0.0.212:26380,10.0.0.212:26381"
       password: wxwwxw123
+      lettuce:
+        pool:
+          max-active: 10
+          max-idle: 5
+          min-idle: 1
+          test-on-borrow: true
 
 search:
   items:
