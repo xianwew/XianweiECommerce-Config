@@ -26,7 +26,7 @@ spring:
         nodes: "redis-sentinel1:26379,redis-sentinel2:26380,redis-sentinel3:26381"
       password: wxwwxw123
       port: 6379
-      host: localhost
+      host: redis-master
       lettuce:
         pool:
           max-active: 10
