@@ -23,7 +23,7 @@ spring:
     redis:
       sentinel:
         master: redis-master
-        nodes: "10.0.0.212:26379"
+        nodes: "10.0.0.212:26379,10.0.0.212:26380,10.0.0.212:26381"
       host: 10.0.0.212
       port: 6379
       password: wxwwxw123
