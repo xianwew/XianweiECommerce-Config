@@ -41,16 +41,16 @@ search:
         delay: 10000
 
 userservice:
-  url: http://user-svc:8070/api/user
+  url: http://user-svc.default.svc.cluster.local:8070/api/user
 
 orderservice:
-  url: http://order-svc:8050/api/orders
+  url: http://order-svc.default.svc.cluster.local:8050/api/orders
 
 feedbackservice:
-  url: http://user-svc:8070/api/feedback
+  url: http://user-svc.default.svc.cluster.local:8070/api/feedback
 
 ratingservice:
-  url: http://user-svc:8070/api/ratings
+  url: http://user-svc.default.svc.cluster.local:8070/api/ratings
 
 keycloak:
   auth-server-url: "http://keycloak-svc:7080"
