@@ -62,6 +62,11 @@ keycloak:
   admin-username: "admin"
   admin-password: "admin"
 
+logging:
+  level:
+    org.springframework.data.redis: DEBUG
+    redis.clients.jedis: DEBUG
+
 item:
   message: "This is XianweiECommerce's item  micro service"
   contactDetails:
