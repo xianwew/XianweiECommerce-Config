@@ -15,7 +15,7 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
 
 itemservice:
-  url: http://item-svc:8040/api/item
+  url: http://item-svc.default.svc.cluster.local:8040/api/item
     
 keycloak:
   auth-server-url: "http://keycloak-svc:7080"
